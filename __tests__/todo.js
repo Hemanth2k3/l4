@@ -2,9 +2,13 @@
 const todoList = require("../todo");
 let today = new Date().toLocaleDateString("en-CA");
 
-const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
+const { all, 
+    markAsComplete, 
+    add, overdue,
+     dueToday, 
+     dueLater } = todoList();
 
-describe("Todolist Test suite", () => {
+describe("Testing Todolist Test suite", () => {
   beforeAll(() => {
     add({
       title: "node testing",
